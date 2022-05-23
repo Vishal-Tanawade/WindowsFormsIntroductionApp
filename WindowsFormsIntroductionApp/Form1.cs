@@ -68,5 +68,15 @@ namespace WindowsFormsIntroductionApp
             else
                 btnUserName.Enabled=false;
         }
+
+        private void btnShowData_Click(object sender, EventArgs e)
+        {
+            String str= "";
+            foreach (string chk in chkbxhobby.CheckedItems)
+            {
+                    str += "," + chk;
+            }
+            MessageBox.Show("your hobbies are: " + str + "\n"+" Are you Active User: " +(rbtnActive.Checked==true? "Yes" :"No" ));
+        }
     }
 }

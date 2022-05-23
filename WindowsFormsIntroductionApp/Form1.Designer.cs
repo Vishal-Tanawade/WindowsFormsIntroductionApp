@@ -42,6 +42,10 @@
             this.lblUserName = new System.Windows.Forms.Label();
             this.txtUseName = new System.Windows.Forms.TextBox();
             this.btnUserName = new System.Windows.Forms.Button();
+            this.chkbxhobby = new System.Windows.Forms.CheckedListBox();
+            this.rbtnActive = new System.Windows.Forms.RadioButton();
+            this.rbtnInActive = new System.Windows.Forms.RadioButton();
+            this.btnShowData = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblName
@@ -151,7 +155,7 @@
             // 
             // txtdate
             // 
-            this.txtdate.Location = new System.Drawing.Point(40, 215);
+            this.txtdate.Location = new System.Drawing.Point(40, 208);
             this.txtdate.Name = "txtdate";
             this.txtdate.Size = new System.Drawing.Size(218, 26);
             this.txtdate.TabIndex = 10;
@@ -159,7 +163,7 @@
             // lblUserName
             // 
             this.lblUserName.AutoSize = true;
-            this.lblUserName.Location = new System.Drawing.Point(40, 297);
+            this.lblUserName.Location = new System.Drawing.Point(40, 264);
             this.lblUserName.Name = "lblUserName";
             this.lblUserName.Size = new System.Drawing.Size(132, 20);
             this.lblUserName.TabIndex = 11;
@@ -167,7 +171,7 @@
             // 
             // txtUseName
             // 
-            this.txtUseName.Location = new System.Drawing.Point(220, 291);
+            this.txtUseName.Location = new System.Drawing.Point(220, 258);
             this.txtUseName.Name = "txtUseName";
             this.txtUseName.Size = new System.Drawing.Size(238, 26);
             this.txtUseName.TabIndex = 12;
@@ -175,18 +179,68 @@
             // 
             // btnUserName
             // 
-            this.btnUserName.Location = new System.Drawing.Point(530, 282);
+            this.btnUserName.Location = new System.Drawing.Point(515, 249);
             this.btnUserName.Name = "btnUserName";
             this.btnUserName.Size = new System.Drawing.Size(181, 44);
             this.btnUserName.TabIndex = 13;
             this.btnUserName.Text = "Add UserName";
             this.btnUserName.UseVisualStyleBackColor = true;
             // 
+            // chkbxhobby
+            // 
+            this.chkbxhobby.FormattingEnabled = true;
+            this.chkbxhobby.Items.AddRange(new object[] {
+            "Cricket",
+            "Badminton",
+            "Football",
+            "Chess",
+            "TableTenis"});
+            this.chkbxhobby.Location = new System.Drawing.Point(44, 303);
+            this.chkbxhobby.Name = "chkbxhobby";
+            this.chkbxhobby.Size = new System.Drawing.Size(128, 119);
+            this.chkbxhobby.TabIndex = 14;
+            // 
+            // rbtnActive
+            // 
+            this.rbtnActive.AutoSize = true;
+            this.rbtnActive.Location = new System.Drawing.Point(220, 326);
+            this.rbtnActive.Name = "rbtnActive";
+            this.rbtnActive.Size = new System.Drawing.Size(77, 24);
+            this.rbtnActive.TabIndex = 15;
+            this.rbtnActive.TabStop = true;
+            this.rbtnActive.Text = "Active";
+            this.rbtnActive.UseVisualStyleBackColor = true;
+            // 
+            // rbtnInActive
+            // 
+            this.rbtnInActive.AutoSize = true;
+            this.rbtnInActive.Location = new System.Drawing.Point(412, 326);
+            this.rbtnInActive.Name = "rbtnInActive";
+            this.rbtnInActive.Size = new System.Drawing.Size(91, 24);
+            this.rbtnInActive.TabIndex = 16;
+            this.rbtnInActive.TabStop = true;
+            this.rbtnInActive.Text = "InActive";
+            this.rbtnInActive.UseVisualStyleBackColor = true;
+            // 
+            // btnShowData
+            // 
+            this.btnShowData.Location = new System.Drawing.Point(227, 368);
+            this.btnShowData.Name = "btnShowData";
+            this.btnShowData.Size = new System.Drawing.Size(114, 38);
+            this.btnShowData.TabIndex = 17;
+            this.btnShowData.Text = "Show Data";
+            this.btnShowData.UseVisualStyleBackColor = true;
+            this.btnShowData.Click += new System.EventHandler(this.btnShowData_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnShowData);
+            this.Controls.Add(this.rbtnInActive);
+            this.Controls.Add(this.rbtnActive);
+            this.Controls.Add(this.chkbxhobby);
             this.Controls.Add(this.btnUserName);
             this.Controls.Add(this.txtUseName);
             this.Controls.Add(this.lblUserName);
@@ -225,6 +279,10 @@
         private System.Windows.Forms.Label lblUserName;
         private System.Windows.Forms.TextBox txtUseName;
         private System.Windows.Forms.Button btnUserName;
+        private System.Windows.Forms.CheckedListBox chkbxhobby;
+        private System.Windows.Forms.RadioButton rbtnActive;
+        private System.Windows.Forms.RadioButton rbtnInActive;
+        private System.Windows.Forms.Button btnShowData;
     }
 }
 
