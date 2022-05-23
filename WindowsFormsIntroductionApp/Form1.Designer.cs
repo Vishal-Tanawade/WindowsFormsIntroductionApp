@@ -39,6 +39,9 @@
             this.lblYear = new System.Windows.Forms.Label();
             this.btnDate = new System.Windows.Forms.Button();
             this.txtdate = new System.Windows.Forms.TextBox();
+            this.lblUserName = new System.Windows.Forms.Label();
+            this.txtUseName = new System.Windows.Forms.TextBox();
+            this.btnUserName = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblName
@@ -153,11 +156,40 @@
             this.txtdate.Size = new System.Drawing.Size(218, 26);
             this.txtdate.TabIndex = 10;
             // 
+            // lblUserName
+            // 
+            this.lblUserName.AutoSize = true;
+            this.lblUserName.Location = new System.Drawing.Point(40, 297);
+            this.lblUserName.Name = "lblUserName";
+            this.lblUserName.Size = new System.Drawing.Size(132, 20);
+            this.lblUserName.TabIndex = 11;
+            this.lblUserName.Text = "Enter User Name";
+            // 
+            // txtUseName
+            // 
+            this.txtUseName.Location = new System.Drawing.Point(220, 291);
+            this.txtUseName.Name = "txtUseName";
+            this.txtUseName.Size = new System.Drawing.Size(238, 26);
+            this.txtUseName.TabIndex = 12;
+            this.txtUseName.TextChanged += new System.EventHandler(this.txtUseName_TextChanged);
+            // 
+            // btnUserName
+            // 
+            this.btnUserName.Location = new System.Drawing.Point(530, 282);
+            this.btnUserName.Name = "btnUserName";
+            this.btnUserName.Size = new System.Drawing.Size(181, 44);
+            this.btnUserName.TabIndex = 13;
+            this.btnUserName.Text = "Add UserName";
+            this.btnUserName.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnUserName);
+            this.Controls.Add(this.txtUseName);
+            this.Controls.Add(this.lblUserName);
             this.Controls.Add(this.txtdate);
             this.Controls.Add(this.btnDate);
             this.Controls.Add(this.lblYear);
@@ -190,6 +222,9 @@
         private System.Windows.Forms.Label lblYear;
         private System.Windows.Forms.Button btnDate;
         private System.Windows.Forms.TextBox txtdate;
+        private System.Windows.Forms.Label lblUserName;
+        private System.Windows.Forms.TextBox txtUseName;
+        private System.Windows.Forms.Button btnUserName;
     }
 }
 

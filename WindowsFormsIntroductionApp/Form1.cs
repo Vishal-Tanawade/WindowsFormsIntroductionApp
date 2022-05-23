@@ -14,7 +14,7 @@ namespace WindowsFormsIntroductionApp
     {
         string[] DaysOfWeek = {"Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday" };
 
-        string[] names = { "Vishal", "Sagar", "Mahesh", "Pratik" };
+        string[] names = { "vishaltanawade", "sagarkale", "maheshtanawade", "pratikmahajan" };
         public Form1()
         {
             InitializeComponent();
@@ -30,6 +30,8 @@ namespace WindowsFormsIntroductionApp
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            btnUserName.Enabled = false;
+
             //foreach(string Day in DaysOfWeek)
             //{
             //    cmbDaysOfWeek.Items.Add(Day);
@@ -54,6 +56,17 @@ namespace WindowsFormsIntroductionApp
         private void btnDate_Click(object sender, EventArgs e)
         {
             txtdate.Text=cmbDaysOfWeek.SelectedItem +","+ cmbMonths.SelectedItem+","+cmbYear.SelectedItem;
+        }
+
+        private void txtUseName_TextChanged(object sender, EventArgs e)
+        {
+            TextBox t1= sender as TextBox;
+            if (t1.Text.Length >= 8 && !names.Contains(t1.Text) )
+            {
+                btnUserName.Enabled=true;
+            }
+            else
+                btnUserName.Enabled=false;
         }
     }
 }
