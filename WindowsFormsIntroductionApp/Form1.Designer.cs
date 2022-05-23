@@ -33,6 +33,7 @@
             this.btnGreet = new System.Windows.Forms.Button();
             this.cmbMonths = new System.Windows.Forms.ComboBox();
             this.cmbDaysOfWeek = new System.Windows.Forms.ComboBox();
+            this.cmbYear = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // lblName
@@ -89,16 +90,26 @@
             // cmbDaysOfWeek
             // 
             this.cmbDaysOfWeek.FormattingEnabled = true;
-            this.cmbDaysOfWeek.Location = new System.Drawing.Point(321, 154);
+            this.cmbDaysOfWeek.Location = new System.Drawing.Point(280, 155);
             this.cmbDaysOfWeek.Name = "cmbDaysOfWeek";
             this.cmbDaysOfWeek.Size = new System.Drawing.Size(121, 28);
             this.cmbDaysOfWeek.TabIndex = 4;
+            // 
+            // cmbYear
+            // 
+            this.cmbYear.FormattingEnabled = true;
+            this.cmbYear.Location = new System.Drawing.Point(565, 154);
+            this.cmbYear.Name = "cmbYear";
+            this.cmbYear.Size = new System.Drawing.Size(121, 28);
+            this.cmbYear.TabIndex = 5;
+           
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.cmbYear);
             this.Controls.Add(this.cmbDaysOfWeek);
             this.Controls.Add(this.cmbMonths);
             this.Controls.Add(this.btnGreet);
@@ -119,6 +130,7 @@
         private System.Windows.Forms.Button btnGreet;
         private System.Windows.Forms.ComboBox cmbMonths;
         private System.Windows.Forms.ComboBox cmbDaysOfWeek;
+        private System.Windows.Forms.ComboBox cmbYear;
     }
 }
 

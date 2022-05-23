@@ -33,6 +33,12 @@ namespace WindowsFormsIntroductionApp
             {
                 cmbDaysOfWeek.Items.Add(Day);
             }
+            for(int i = 1950; i <2050 ; i++)
+            {
+                cmbYear.Items.Add(i);
+            }
         }
+
+      
     }
 }
