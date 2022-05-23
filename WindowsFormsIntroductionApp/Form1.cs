@@ -12,7 +12,7 @@ namespace WindowsFormsIntroductionApp
 {
     public partial class Form1 : Form
     {
-
+        string[] DaysOfWeek = {"Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday" };
         
         public Form1()
         {
@@ -29,7 +29,10 @@ namespace WindowsFormsIntroductionApp
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            foreach(string Day in DaysOfWeek)
+            {
+                cmbDaysOfWeek.Items.Add(Day);
+            }
         }
     }
 }
