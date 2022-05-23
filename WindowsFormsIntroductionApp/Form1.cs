@@ -12,6 +12,8 @@ namespace WindowsFormsIntroductionApp
 {
     public partial class Form1 : Form
     {
+
+        
         public Form1()
         {
             InitializeComponent();
@@ -22,6 +24,11 @@ namespace WindowsFormsIntroductionApp
         private void btnGreet_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Hello, "+txtName.Text);
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
 
         }
     }

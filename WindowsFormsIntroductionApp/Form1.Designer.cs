@@ -31,6 +31,7 @@
             this.lblName = new System.Windows.Forms.Label();
             this.txtName = new System.Windows.Forms.TextBox();
             this.btnGreet = new System.Windows.Forms.Button();
+            this.cmbMonths = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // lblName
@@ -63,16 +64,39 @@
             this.btnGreet.UseVisualStyleBackColor = false;
             this.btnGreet.Click += new System.EventHandler(this.btnGreet_Click);
             // 
+            // cmbMonths
+            // 
+            this.cmbMonths.FormattingEnabled = true;
+            this.cmbMonths.Items.AddRange(new object[] {
+            "January",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "August",
+            "September",
+            "October",
+            "November",
+            "December"});
+            this.cmbMonths.Location = new System.Drawing.Point(69, 155);
+            this.cmbMonths.Name = "cmbMonths";
+            this.cmbMonths.Size = new System.Drawing.Size(121, 28);
+            this.cmbMonths.TabIndex = 3;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.cmbMonths);
             this.Controls.Add(this.btnGreet);
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.lblName);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -83,6 +107,7 @@
         private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.Button btnGreet;
+        private System.Windows.Forms.ComboBox cmbMonths;
     }
 }
 
