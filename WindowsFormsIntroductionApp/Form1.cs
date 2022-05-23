@@ -16,5 +16,13 @@ namespace WindowsFormsIntroductionApp
         {
             InitializeComponent();
         }
+
+     
+
+        private void btnGreet_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Hello, "+txtName.Text);
+
+        }
     }
 }
