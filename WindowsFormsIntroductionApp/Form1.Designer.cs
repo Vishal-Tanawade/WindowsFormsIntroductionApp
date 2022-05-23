@@ -46,6 +46,9 @@
             this.rbtnActive = new System.Windows.Forms.RadioButton();
             this.rbtnInActive = new System.Windows.Forms.RadioButton();
             this.btnShowData = new System.Windows.Forms.Button();
+            this.tbRating = new System.Windows.Forms.TrackBar();
+            this.lblRating = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.tbRating)).BeginInit();
             this.SuspendLayout();
             // 
             // lblName
@@ -203,7 +206,7 @@
             // rbtnActive
             // 
             this.rbtnActive.AutoSize = true;
-            this.rbtnActive.Location = new System.Drawing.Point(220, 326);
+            this.rbtnActive.Location = new System.Drawing.Point(220, 303);
             this.rbtnActive.Name = "rbtnActive";
             this.rbtnActive.Size = new System.Drawing.Size(77, 24);
             this.rbtnActive.TabIndex = 15;
@@ -214,7 +217,7 @@
             // rbtnInActive
             // 
             this.rbtnInActive.AutoSize = true;
-            this.rbtnInActive.Location = new System.Drawing.Point(412, 326);
+            this.rbtnInActive.Location = new System.Drawing.Point(414, 303);
             this.rbtnInActive.Name = "rbtnInActive";
             this.rbtnInActive.Size = new System.Drawing.Size(91, 24);
             this.rbtnInActive.TabIndex = 16;
@@ -224,7 +227,7 @@
             // 
             // btnShowData
             // 
-            this.btnShowData.Location = new System.Drawing.Point(227, 368);
+            this.btnShowData.Location = new System.Drawing.Point(183, 352);
             this.btnShowData.Name = "btnShowData";
             this.btnShowData.Size = new System.Drawing.Size(114, 38);
             this.btnShowData.TabIndex = 17;
@@ -232,11 +235,32 @@
             this.btnShowData.UseVisualStyleBackColor = true;
             this.btnShowData.Click += new System.EventHandler(this.btnShowData_Click);
             // 
+            // tbRating
+            // 
+            this.tbRating.Location = new System.Drawing.Point(338, 333);
+            this.tbRating.Maximum = 100;
+            this.tbRating.Name = "tbRating";
+            this.tbRating.Size = new System.Drawing.Size(435, 69);
+            this.tbRating.TabIndex = 18;
+            this.tbRating.Scroll += new System.EventHandler(this.tbRating_Scroll);
+            // 
+            // lblRating
+            // 
+            this.lblRating.AutoSize = true;
+            this.lblRating.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.lblRating.Font = new System.Drawing.Font("Modern No. 20", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRating.Location = new System.Drawing.Point(360, 401);
+            this.lblRating.Name = "lblRating";
+            this.lblRating.Size = new System.Drawing.Size(0, 31);
+            this.lblRating.TabIndex = 19;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblRating);
+            this.Controls.Add(this.tbRating);
             this.Controls.Add(this.btnShowData);
             this.Controls.Add(this.rbtnInActive);
             this.Controls.Add(this.rbtnActive);
@@ -258,6 +282,7 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.tbRating)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -283,6 +308,8 @@
         private System.Windows.Forms.RadioButton rbtnActive;
         private System.Windows.Forms.RadioButton rbtnInActive;
         private System.Windows.Forms.Button btnShowData;
+        private System.Windows.Forms.TrackBar tbRating;
+        private System.Windows.Forms.Label lblRating;
     }
 }
 

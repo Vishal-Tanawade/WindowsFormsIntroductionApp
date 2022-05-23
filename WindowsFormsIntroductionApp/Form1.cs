@@ -78,5 +78,11 @@ namespace WindowsFormsIntroductionApp
             }
             MessageBox.Show("your hobbies are: " + str + "\n"+" Are you Active User: " +(rbtnActive.Checked==true? "Yes" :"No" ));
         }
+
+        private void tbRating_Scroll(object sender, EventArgs e)
+        {
+            lblRating.Text = tbRating.Value.ToString();
+
+        }
     }
 }
